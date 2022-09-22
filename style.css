@@ -1,0 +1,52 @@
+@import url('http://fonts.cdnfonts.com/css/one-piece');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.titulo-principal {
+    font-family: 'One Piece', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.descricao {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+}
+
+.cards-row {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.card {
+    width: 350px;
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 5px 5px 5px;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+.card:hover {
+    top: -15px;
+}
+
+#last-row {
+    padding-bottom: 50px;
+}
