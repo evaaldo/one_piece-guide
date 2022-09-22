@@ -40,7 +40,7 @@ body {
     position: relative;
     box-shadow: 5px 5px 5px;
     top: 0;
-    transition: top ease 0.5s;
+    transition: top ease 0.2s;
 }
 
 .card:hover {
