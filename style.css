@@ -1,5 +1,6 @@
 @import url('http://fonts.cdnfonts.com/css/one-piece');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 * {
     padding: 0;
@@ -9,14 +10,21 @@
 
 body {
     height: 100vh;
+    background-image: url(/background.jpg);
+}
+
+.fundo {
+    width: 100%;
+    height: 100%;
 }
 
 .titulo-principal {
-    font-family: 'One Piece', sans-serif;
+    font-family: 'Bebas Neue', cursive;
     text-align: center;
     padding-top: 20px;
     font-weight: 700;
-    font-size: 45px;
+    font-size: 65px;
+    color: white;
 }
 
 .descricao {
@@ -24,6 +32,7 @@ body {
     font-weight: 600;
     font-size: 30px;
     text-align: center;
+    color: white;
 }
 
 .cards-row {
@@ -35,8 +44,7 @@ body {
 .card {
     width: 350px;
     height: 250px;
-    border: 2px solid black;
-    border-radius: 10px;
+    border: 3px solid black;
     position: relative;
     box-shadow: 5px 5px 5px;
     top: 0;
@@ -49,4 +57,9 @@ body {
 
 #last-row {
     padding-bottom: 50px;
+}
+
+.fundos-card img{
+    width: 100%;
+    height: 100%;
 }
