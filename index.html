@@ -6,44 +6,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ONE PIECE - Guide</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="jpeg" href="chapeu-de-palha-removebg-preview.png">
 </head>
 <body>
+    <div class="nav-bar">
+        <img src="caveira-one-piece-removebg-preview.png" alt="">
+        <a href="https://github.com/evaaldo">PROJETOS</a>
+        <a href="https://www.linkedin.com/in/evaldo-rodrigues-0b0522247/">REDES SOCIAIS</a>
+        <a href="https://onepiece.fandom.com/pt/wiki/Página_principal">ONE PIECE WIKI</a>
+        <a href="https://www.reddit.com/r/OnePiece/">ONE PIECE - REDDIT</a>
+        <a href="">CONTATO</a>
+    </div>
+
     <div class="cabecalho">
-        <h1 class="titulo-principal">ONE PIECE</h1>
+        <h1 class="titulo-principal"><img src="title-removebg-preview (6).png" alt=""></h1>
         <p class="descricao">Escolha qual saga você quer assistir!</p>
     </div>
-    <div class="cards-row">
-        <div class="card fundos-card" id="east-blue">
-            <img src="saga-east-blue.jpg" alt="east-blue">
+
+    <div class="container">
+        <div class="cards-row">
+            <div class="card fundos-card" id="east-blue">
+                <a href="https://betteranime.net/anime/legendado/one-piece/episodio-01">
+                    <p class="titulo-card">SAGA EAST-BLUE</p>
+                    <p class="descricao-card" id="card-padding">A primeira saga da grande aventura dos chapéus de palha!</p>
+                    <img onclick="mudaImagem()" src="saga-east-blue.jpg" alt="east-blue" id="east-blue">
+                    <p class="descricao-card">Episódios (anime): 1 - 60</p>
+                    <p class="descricao-card">Capítulos (mangá): 1 - 100</p>
+                </a>
+            </div>
+            <div class="card fundos-card" id="alabasta">
+                <a href="https://betteranime.net/anime/legendado/one-piece/episodio-61">
+                    <p class="titulo-card">SAGA ALABASTA</p>
+                    <p class="descricao-card" id="card-padding">A chegada de novos companheiros ao bando e a retomada de um reino!</p>
+                    <img src="alabasta2.jpg" alt="alabasta">
+                    <p class="descricao-card">Episódios (anime): 61 - 135</p>
+                    <p class="descricao-card">Capítulos (mangá): 101 - 217</p>
+                </a>
+            </div>
+            <div class="card fundos-card" id="skypiea">
+                <a href="https://betteranime.net/anime/legendado/one-piece/episodio-144">
+                    <p class="titulo-card">SAGA SKYPIEA</p>
+                    <p class="descricao-card" id="card-padding">A visita a uma improvável ilha no céu e um vilão aparentemente invencível!</p>
+                    <img src="skypiea.jpg" alt="skypiea">
+                    <p class="descricao-card">Episódios (anime): 144 - 195</p>
+                    <p class="descricao-card">Capítulos (mangá): 218 - 302</p>
+                </a>
+            </div>
         </div>
-        <div class="card fundos-card" id="alabasta">
-            <img src="alabasta2.jpg" alt="alabasta">
+        <div class="cards-row">
+            <div class="card fundos-card" id="water-seven">
+                <a href="https://betteranime.net/anime/legendado/one-piece/episodio-207">
+                    <p class="titulo-card">SAGA WATER SEVEN</p>
+                    <p class="descricao-card" id="card-padding">A chegada de um novo tripulante e o fortalecimento do laço que une os chapéus de palha!</p>
+                    <img src="water-seven.jpg" alt="water-seven">
+                    <p class="descricao-card">Episódios (anime): 207 - 325</p>
+                    <p class="descricao-card">Capítulos (mangá): 303 - 441</p>
+                </a>
+            </div>
+            <div class="card fundos-card" id="thriller-bark">
+                <a href="https://betteranime.net/anime/legendado/one-piece/episodio-337">
+                    <p class="titulo-card">SAGA THRILLER BARK</p>
+                    <p class="descricao-card" id="card-padding">Mais um tripulante! Uma "ilha" misteriosa e assustadora!</p>
+                    <img src="thriller-bark.jpg" alt="thriller-bark">
+                    <p class="descricao-card">Episódios (anime): 337 - 381</p>
+                    <p class="descricao-card">Capítulos (mangá): 442 - 489</p>
+                </a>
+            </div>
+            <div class="card fundos-card" id="marine-ford">
+                <a href="https://betteranime.net/anime/legendado/one-piece/episodio-385">
+                    <p class="titulo-card">SAGA MARINE FORD</p>
+                    <p class="descricao-card" id="card-padding">A grande guerra tem seu início. Grande oponentes e grandes aliados surgem!</p>
+                    <img src="marine-ford.jpg" alt="marine-ford">
+                    <p class="descricao-card">Episódios (anime): 385 - 516</p>
+                    <p class="descricao-card">Capítulos (mangá): 490 - 597</p>
+                </a>
+            </div>
         </div>
-        <div class="card fundos-card" id="skypiea">
-            <img src="skypiea.jpg" alt="skypiea">
+        <div class="cards-row" id="last-row">
+            <div class="card fundos-card" id="homens-peixe">
+                <a href="https://betteranime.net/anime/legendado/one-piece/episodio-517">
+                    <p class="titulo-card">SAGA HOMENS-PEIXE</p>
+                    <p class="descricao-card" id="card-padding">A volta dos chapéus de palha e sua chegada ao novo mundo! O resultado de seus treinos!</p>
+                    <img src="homens-peixe.jpg" alt="homens-peixe">
+                    <p class="descricao-card">Episódios (anime): 517 - 574</p>
+                    <p class="descricao-card">Capítulos (mangá): 598 - 653</p>
+                </a>
+            </div>
+            <div class="card fundos-card" id="alianca-pirata">
+                <a href="https://betteranime.net/anime/legendado/one-piece/episodio-579">
+                    <p class="titulo-card">SAGA ALIANÇA PIRATA</p>
+                    <p class="descricao-card" id="card-padding">Luffy se alia com a pior geração para enfrentar os maiores piratas do mundo!</p>
+                    <img src="alianca-pirata.jpeg" alt="alianca-pirata">
+                    <p class="descricao-card">Episódios (anime): 579 - 746</p>
+                    <p class="descricao-card">Capítulos (mangá): 654 - 801</p>
+                </a>
+            </div>
+            <div class="card fundos-card" id="yonkou">
+                <a href="https://betteranime.net/anime/legendado/one-piece/episodio-751">
+                    <p class="titulo-card">SAGA YONKOU</p>
+                    <p class="descricao-card" id="card-padding">A esperada hora chega! O confronto com os impereadores do novo mundo tem seu início!</p>
+                    <img src="yonkou.jpg" alt="yonkou">
+                    <p class="descricao-card">Episódios (anime): 751 - em lançamento..</p>
+                    <p class="descricao-card">Capítulos (mangá): 802 - 1055</p>
+                </a>
+            </div>
         </div>
     </div>
-    <div class="cards-row">
-        <div class="card fundos-card" id="water-seven">
-            <img src="water-seven.jpg" alt="water-seven">
-        </div>
-        <div class="card fundos-card" id="thriller-bark">
-            <img src="thriller-bark.jpg" alt="thriller-bark">
-        </div>
-        <div class="card fundos-card" id="marine-ford">
-            <img src="marine-ford.jpg" alt="marine-ford">
-        </div>
-    </div>
-    <div class="cards-row" id="last-row">
-        <div class="card fundos-card" id="homens-peixe">
-            <img src="homens-peixe.jpg" alt="homens-peixe">
-        </div>
-        <div class="card fundos-card" id="alianca-pirata">
-            <img src="alianca-pirata.jpeg" alt="alianca-pirata">
-        </div>
-        <div class="card fundos-card" id="yonkou">
-            <img src="yonkou.jpg" alt="yonkou">
-        </div>
-    </div>
+
+    <script src="main.js">
+
+    </script>
 </body>
 </html>
