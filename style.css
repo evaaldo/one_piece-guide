@@ -14,27 +14,50 @@
 body {
     height: 100vh;
     background-color: rgb(42, 132, 235);
+    transition: 0.3s;
 }
 
-.botao {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 25px;
-    gap: 15px;
+input[type='checkbox'] {
+    display: none;
 }
 
-.change {
-    width: 75px;
-    height: 30px;
-    border-radius: 20px;
-    font-family: 'Anton', sans-serif;
-    transition: all 0.5s;
+.dark{
+    background-color: #0f2641;
+    color: white;
+}
+
+.dark .card {
+    background-color: rgb(51, 50, 97);
+}
+
+.dark .card .titulo-card {
+    color: white;
+}
+
+.dark .card .descricao-card {
+    color: white;
+}
+
+.dark .nav-bar{
+    background-color: #263238;
+    box-shadow: 0.5px 0.5px 10px 0.5px black;
+}
+
+.bi {
+    font: 1.3rem;
     cursor: pointer;
 }
 
-.change:hover {
-    opacity: 0.5;
+.bi-moon {
+    display: none;
+}
+
+.dark .bi-sun {
+    display: none;
+}
+
+.dark .bi-moon {
+    display: block;
 }
 
 .fundo {
@@ -45,11 +68,12 @@ body {
 .nav-bar {
     width: 100%;
     height: 80px;
-    background-image: url(/sea.jpg);
+    background-color: rgb(182, 27, 27);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border-bottom: 1px solid rgb(61, 59, 59);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    box-shadow: 0.5px 0.5px 10px 0.5px;
 }
 
 .nav-bar img {
@@ -86,10 +110,25 @@ body {
     color: white;
 }
 
+.dark-mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark-mode label{
+    font-size: 32px;
+    color: rgb(255, 251, 0);
+}
+
+.dark .dark-mode label {
+    color: rgb(224, 169, 18);
+}
+
 .cards-row {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .card {
@@ -140,9 +179,65 @@ body {
 a {
     text-decoration: none;
     transition: 0.5s;
-    color: black;
 }
 
-a:active {
-    color: black;
+.contato .titulo-contato {
+    margin-top: 15px;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.contato .email p {
+    font-family: 'Anton', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.contato .email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+    background: rgb(202, 13, 13);
+    border: 1px solid white;
+    border-radius: 15px;
+    margin: 20px auto 20px auto;
+    box-shadow: 0.5px 0.5px 10px 0.5px;
+}
+
+.contato .icones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    width: 160px;
+    height: 60px;
+    background: rgb(88, 84, 84);
+    border: 1px solid white;
+    border-radius: 15px;
+    margin: 20px auto 20px auto;
+    box-shadow: 0.5px 0.5px 10px 0.5px;
+}
+
+.contato .icones img {
+    width: 32px;
+    transition: .5s;
+}
+
+.contato .icones img:hover {
+    opacity: 0.5;
+}
+
+.dark .contato .email {
+    background-color: #263238;
+    box-shadow: 0.5px 0.5px 10px 0.5px black;
+}
+
+.dark .contato .icones {
+    background-color: #263238;
+    box-shadow: 0.5px 0.5px 10px 0.5px black;
 }
